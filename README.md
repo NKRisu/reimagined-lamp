@@ -4,7 +4,6 @@ Cybersecurity and data privacy - Blended Logbook for the course
 
 # Logbook of stuff
 
-30.10.2024 - 1h - speedrunning recordings and quiz on cisco - 
 
 <details>
 <summary>Logbook</summary>
