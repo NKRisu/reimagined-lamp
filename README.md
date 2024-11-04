@@ -13,7 +13,7 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |30.10.2024| 1 h  | Lecture speedrunning, quiz| Quiz done, this logbook started|
 |31.10.2024| 2 h  | First chapter done        | Progress on course             |
 |2.11.2024 | 2 h  | Second chapter done       | Progress on course             |
-|4.11.2024 | 1 h  | Third chapter done        | placehold             |
+|4.11.2024 | 1 h  | Third chapter done        | Progress on course             |
 |placehold | placehold | placehold            | placehold             |
 
 </details>
