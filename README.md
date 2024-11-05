@@ -16,5 +16,7 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |4.11.2024 | 1 h  | Third chapter done        | Progress on course              |
 |5.11.2024 | 1 h  | Starting up PortSwigger   | Ability to start a next task    |
 |5.11.2024 | 2 h  | Few labs in PortSwigger   | Progress on SQL injection x4 lab|
+|5.11.2024 | 2 h  | Few labs in PortSwigger   | Progress on authentication lab  |
+|placehold | placehold | placehold            | placehold             |
 |placehold | placehold | placehold            | placehold             |
 </details>
