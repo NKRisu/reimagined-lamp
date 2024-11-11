@@ -24,6 +24,7 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |8.11.2024 | 2 h  | PortSwigger labs          | Progress on authentication labs |
 |11.11.2024| 2 h  | PortSwigger labs          | Progress on access control labs |
 |11.11.2024| 3 h  | PortSwigger labs          | 4x SQL, 4x access, 5x auth labs |
+|11.11.2024| 3 h  | Lecture watching, website | starting Phase 1 of application |
 |placehold | placehold | placehold            | placehold             |
 |placehold | placehold | placehold            | placehold             |
 </details>
