@@ -26,6 +26,19 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |11.11.2024| 3 h  | PortSwigger labs          | 4x SQL, 4x access, 5x auth labs |
 |11.11.2024| 3 h  | Lecture watching, website | Starting Phase 1 of application |
 |12.11.2024| 4 h  | Lecture watching, website | Progress Phase 1 of application |
-|18.11.2024| 2 h  | Smashing head on wall     | Website functional              |
+|18.11.2024| 2 h  | Smashing head on wall     | Website functional now          |  
+|18.11.2024| 2 h  | Smashing head on wall pt.2| Website passes ZAP tests now    |
 |placehold | placehold | placehold            | placehold                       |
 </details>
+
+# More detail about what i have done between ZAP reports
+
+Link to report 1: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-18-ZAP-Report-.md
+
+After I had tried to fix broken code for the website, backend and also made some errors in the SQL database in Docker container, I begrudgingly gave up on my own codebase and copied the codebase that was given. Started completely from scratch and setup Docker properly, created the SQL database and checked all the tables and naming conventions are correct to what the code asks for are there and launched the website using Deno. Surprisingly the website functioned this time. I then went and tested manually setting valid inputs, invalid inputs and seeing how the database updated, everything seemed okay! That's good! 
+
+So now it was time to see what all was broken security wise on the website based on ZAP report. Obviously there are a lot more glaring issues in the codebase but this is good start. With the report i found out that Content Security Policies should eb set, and so should X-Frame-Options and X-Content-Type-Options. So quick googling on how to deal with these, adding bunch of code from the internet, and drag server back up and running to test it.
+
+Link to last report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-18-ZAP-Report-localhost.md
+
+And miracilously, all alerts have been dealth with. So far. More features to be added, more code to be broken and fixed. 
