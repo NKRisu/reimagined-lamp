@@ -1,3 +1,8 @@
+
+
+<details>
+<summary>Logbook</summary>
+
 # reimagined-lamp
 Cybersecurity and data privacy - Blended Logbook for the course
 
@@ -42,3 +47,10 @@ So now it was time to see what all was broken security wise on the website based
 Link to last report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-18-ZAP-Report-localhost.md
 
 And miracilously, all alerts have been dealth with. So far. More features to be added, more code to be broken and fixed. 
+
+
+# Adding index page and login page
+
+Link to reports: 1: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-22-ZAP-Report-.md 2: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-22-ZAP-Report-2.md
+
+After running multiple scans, there was no errors shown. Checking the report it only says: "This is an informational alert rather than a vulnerability and so there is nothing to fix.", So I don't exactly know if there is anything to add. I already added the bare minimum in Phase 1. On the server logs side I can see that there are a lot of failed attempts by ZAP-scans where server slaps the attempts down, so maybe it does actually work :D
