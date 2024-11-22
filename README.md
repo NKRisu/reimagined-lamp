@@ -33,6 +33,7 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |12.11.2024| 4 h  | Lecture watching, website | Progress Phase 1 of application |
 |18.11.2024| 2 h  | Smashing head on wall     | Website functional now          |  
 |18.11.2024| 2 h  | Smashing head on wall pt.2| Website passes ZAP tests now    |
+|22.11.2024| 4 h  | Adding index, login pages | pages added, ZAP tests passed   |
 |placehold | placehold | placehold            | placehold                       |
 </details>
 
