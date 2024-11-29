@@ -33,9 +33,10 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |12.11.2024| 4 h  | Lecture watching, website | Progress Phase 1 of application |
 |18.11.2024| 2 h  | Smashing head on wall     | Website functional now          |  
 |18.11.2024| 2 h  | Smashing head on wall pt.2| Website passes ZAP tests now    |
-|22.11.2024| 4 h  | Adding index, login pages | pages added, ZAP tests passed   |
-|29.11.2024| 2 h  | Reservation pages added   | pages added                     |
-|29.11.2024| 2 h  | Writing issues.md         | figuring out what all is bad    |
+|22.11.2024| 4 h  | Adding index, login pages | Pages added, ZAP tests passed   |
+|29.11.2024| 2 h  | Reservation pages added   | Pages added                     |
+|29.11.2024| 2 h  | Writing issues.md         | Figuring out what all is bad    |
+|29.11.2024| 1 h  | Editing readme file       | Fixing the readme, adding link  |
 |placehold | placehold | placehold            | placehold                       |
 </details>
 
@@ -57,5 +58,25 @@ And miracilously, all alerts have been dealth with. So far. More features to be 
 Link to report 1: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-22-ZAP-Report-.md 
 
 After running multiple scans, there was no errors shown. Checking the report it only says: "This is an informational alert rather than a vulnerability and so there is nothing to fix.", So I don't exactly know if there is anything to add. I already added the bare minimum in Phase 1. On the server logs side I can see that there are a lot of failed attempts by ZAP-scans where server slaps the attempts down, so maybe it does actually work :D Also checked the database to check that data is correctly stored and retviewed. So it all works. Yay.
+
+# Adding Reservation and Resource pages
+
+Joinked the page files and read through the code to make sure it works with my codebase. Then ran ZAP tests on the newly added pages with no alarms shown. Zap report of this is in the files.
+Link to report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-29-ZAP-Report-.md 
+
+# Figuring out the issues and changes that should be made
+
+The booking system is really not production ready and there is a lot that has to be changed from locally hosted semi-safe website beta version to actual production based version. In the assignment it was asked to mark down 5 of the most important changes and fixes required to make the codebase approach production. Some of the changes are quite simply just about stopping the use of quick ways to build test environment that allows the system to function for testing at this point, such as not using in-memory store for the session management. 
+
+Anyways, link to the issues.md is here: https://github.com/NKRisu/reimagined-lamp/blob/main/Issues.md 
+
+
+
+
+
+
+
+
+
 
 Link to report 2: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-11-22-ZAP-Report-2.md
