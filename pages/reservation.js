@@ -27,7 +27,7 @@ export async function handleReservationForm(req) {
     const session = getSession(req);
 
     if (!session || !session.username) {
-        return new Response("Unauthorized", { status: 401 });   // if session ids do not match, do not allow
+        return new Response("Unauthorized", { status: 401 });
     }
 
     const formHtml = `

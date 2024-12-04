@@ -15,29 +15,34 @@ Cybersecurity and data privacy - Blended Logbook for the course
 
 | Date | Time | Thing done | Things result |
 |-----:|-----------|-----|-----------|
-|30.10.2024| 1 h  | Lecture speedrunning, quiz| Quiz done, this logbook started|
+|30.10.2024| 2 h  | Lecture speedrunning, quiz| Quiz done, this logbook started|
 |31.10.2024| 2 h  | First chapter done        | Progress on course              |
 |2.11.2024 | 2 h  | Second chapter done       | Progress on course              |
-|4.11.2024 | 1 h  | Third chapter done        | Progress on course              |
-|5.11.2024 | 1 h  | Starting up PortSwigger   | Ability to start a next task    |
+|4.11.2024 | 3 h  | Third chapter done        | Progress on course              |
+|5.11.2024 | 4 h  | Starting up PortSwigger   | Ability to start a next task    |
 |5.11.2024 | 2 h  | Few labs in PortSwigger   | Progress on SQL injection labs  |
 |5.11.2024 | 2 h  | Few labs in PortSwigger   | Progress on authentication labs |
 |6.11.2024 | 2 h  | More labs in PortSwigger  | Progress on SQL injection labs  |
 |6.11.2024 | 1 h  | Fourth chapter done       | Progress on course              |
-|7.11.2024 | 1 h  | Fifth chapter done        | Progress on course              |
+|7.11.2024 | 2 h  | Fifth chapter done        | Progress on course              |
 |7.11.2024 | 1 h  | Module exam done          | Part of course done             |
-|8.11.2024 | 2 h  | PortSwigger labs          | Progress on authentication labs |
-|11.11.2024| 2 h  | PortSwigger labs          | Progress on access control labs |
+|8.11.2024 | 3 h  | PortSwigger labs          | Progress on authentication labs |
+|11.11.2024| 4 h  | PortSwigger labs          | Progress on access control labs |
 |11.11.2024| 3 h  | PortSwigger labs          | 4x SQL, 4x access, 5x auth labs |
 |11.11.2024| 3 h  | Lecture watching, website | Starting Phase 1 of application |
 |12.11.2024| 4 h  | Lecture watching, website | Progress Phase 1 of application |
 |18.11.2024| 2 h  | Smashing head on wall     | Website functional now          |  
-|18.11.2024| 2 h  | Smashing head on wall pt.2| Website passes ZAP tests now    |
+|18.11.2024| 3 h  | Smashing head on wall pt.2| Website passes ZAP tests now    |
 |22.11.2024| 4 h  | Adding index, login pages | Pages added, ZAP tests passed   |
 |29.11.2024| 2 h  | Reservation pages added   | Pages added                     |
 |29.11.2024| 2 h  | Writing issues.md         | Figuring out what all is bad    |
-|29.11.2024| 1 h  | Editing readme file       | Fixing the readme, adding link  |
-|placehold | placehold | placehold            | placehold                       |
+|29.11.2024| 1 h  | Editing readme file       | Fixed the readme, added link    |
+|4.12.2024 | 2 h  | Adding new fields to DB   | Debugged, learnt, DB works      |
+|4.12.2024 | 2 h  | Account, terms, policy    | Required pages added, DB works  |
+|4.12.2024 | 2 h  | New page testing          | ZAP reports, bug fixes done     |
+
+
+
 </details>
 
 # More detail about what i have done between ZAP reports
@@ -72,6 +77,11 @@ The booking system is really not production ready and there is a lot that has to
 
 Anyways, link to the issues.md is here: https://github.com/NKRisu/reimagined-lamp/blob/main/Issues.md 
 
+# Adding account page, terms&conditions page and privacy notice pages
+
+Adding the pages required updates to the database, new fields for account creation date and terms accepted were required for the account page to show properly. Login log table had to be created as new functions in backend require logging to function properly. With some bit of googling I figured out the commansd to add new fields and create new tables and could also peek in and see that the tables and fields were created correctly. After which I then could test the pages in browser and with ZAP. 
+
+The ZAP report came with some informational alerts due to comments in code it seems like. Following ZAP's suggestion these comments should be removed from code going to production.
 
 
 

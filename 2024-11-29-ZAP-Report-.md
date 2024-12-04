@@ -1,5 +1,3 @@
-
-
 # ZAP by Checkmarx Scanning Report
 
 ZAP by [Checkmarx](https://checkmarx.com/).

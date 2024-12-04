@@ -1,17 +1,17 @@
 import { serve } from "https://deno.land/std@0.199.0/http/server.ts";
-import { loginUser } from "./routes/login.js";
-import { registerUser } from "./routes/register.js";
-import { registerResource, getResources } from "./routes/resource.js";
-import { registerReservation, handleReservationForm } from "./routes/reservation.js";
-import { handleIndex, handleDefaultIndex } from "./routes/indexPage.js";
+import { loginUser } from "./pages/login.js";
+import { registerUser, getAccountInfo } from "./pages/register.js";
+import { registerResource, getResources } from "./pages/resource.js";
+import { registerReservation, handleReservationForm } from "./pages/reservation.js";
+import { handleIndex, handleDefaultIndex } from "./pages/indexPage.js";
 import { getSession, destroySession, getCookieValue } from "./sessionService.js"; // For sessions
 
 let connectionInfo = {};
 
-// In-memory session store (replace with a database in production) <- clearly marked as to-be-replaced
+// In-memory session store (replace with a database in production)
 const sessionStore = new Map();
 
-// Middleware to set security headers globally <- this can be an issue
+// Middleware to set security headers globally
 async function addSecurityHeaders(req, handler) {
     const response = await handler(req);
 
@@ -55,7 +55,6 @@ async function handler(req) {
     // Route: Index page
     if (url.pathname === "/" && req.method === "GET") {
         const session = getSession(req);
-
         if (session) {
             return await handleIndex(req);
 
@@ -107,6 +106,14 @@ async function handler(req) {
 
     // Route: Resource page
     if (url.pathname === "/resources" && req.method === "GET") {
+        // Authorization part
+        const session = getSession(req);
+        if (!session) {
+            return new Response("Unauthorized", { status: 401 });
+        }
+        if (session.role != "administrator") {
+            return new Response("Unauthorized", { status: 401 });
+        }
         return await serveStaticFile("./views/resource.html", "text/html");
     }
 
@@ -130,6 +137,27 @@ async function handler(req) {
     if (url.pathname === "/reservation" && req.method === "POST") {
         const formData = await req.formData();
         return await registerReservation(formData);
+    }
+
+    // Route: Terms of service page
+    if (url.pathname === "/terms" && req.method === "GET") {
+        return await serveStaticFile("./views/terms.html", "text/html");
+    }
+
+    // Route: Privacy notice page
+    if (url.pathname === "/privacynotice" && req.method === "GET") {
+        return await serveStaticFile("./views/privacynotice.html", "text/html");
+    }
+
+    // Route: Account page
+    if (url.pathname === "/account" && req.method === "GET") {
+        return await serveStaticFile("./views/account.html", "text/html");
+    }
+
+    // Route: Account info
+    if (url.pathname === "/accountInfo" && req.method === "GET") {
+        const session = getSession(req);
+        return await getAccountInfo(session.username);
     }
 
     // Default response for unknown routes
@@ -160,5 +188,6 @@ async function mainHandler(req, info) {
 }
 
 serve(mainHandler, { port: 8000 });
+//serve(mainHandler, { port: 80, hostname: "0.0.0.0" });
 
 // Run: deno run --allow-net --allow-env --allow-read --watch app.js
