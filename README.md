@@ -82,9 +82,14 @@ Anyways, link to the issues.md is here: https://github.com/NKRisu/reimagined-lam
 Adding the pages required updates to the database, new fields for account creation date and terms accepted were required for the account page to show properly. Login log table had to be created as new functions in backend require logging to function properly. With some bit of googling I figured out the commansd to add new fields and create new tables and could also peek in and see that the tables and fields were created correctly. After which I then could test the pages in browser and with ZAP. 
 
 The ZAP report came with some informational alerts due to comments in code it seems like. Following ZAP's suggestion these comments should be removed from code going to production.
-and link to latest report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-12-04-ZAP-Report-.md 
 
+and the link to latest report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-12-04-ZAP-Report-.md 
 
+# Yapping about consent on the service and if its implemented properly
+
+So the system does ask for terms of service consent, but this is not quite what is required and does not cover everything. GDPR requires explicit consent from the user for processing of personal data, so this should be made extremely clear to the user. There are currently no cookie and tracker consent popups either when the service technically does use cookies. Asking for consent from the user for their data and explaining clearly what it is used for is also great way to build trust for the user. Or distrust if they feel like no data should be gathered... I personally am not too aware of all the legal hoops I should jump through with a service that collects data, which means asking consent and explicitly explaining what the information is used for and how its stored and who is liable if something goes wrong is highly imporant. 
+
+During user registration, user is required to accept the terms and conditions. This page is also available for viewing for the user if they so choose. This is like the bare minimum of user consent asking, and it could be expanded with the privacy notice also beng shown to the user, even though these two overlap a little they are different documents and they do containt different information. Asking for user consent for their data during registration is required by quite few requlations, and even if it was not, it would still be good practice to get explicit consent to handle users private data.
 
 
 
