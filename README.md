@@ -82,6 +82,7 @@ Anyways, link to the issues.md is here: https://github.com/NKRisu/reimagined-lam
 Adding the pages required updates to the database, new fields for account creation date and terms accepted were required for the account page to show properly. Login log table had to be created as new functions in backend require logging to function properly. With some bit of googling I figured out the commansd to add new fields and create new tables and could also peek in and see that the tables and fields were created correctly. After which I then could test the pages in browser and with ZAP. 
 
 The ZAP report came with some informational alerts due to comments in code it seems like. Following ZAP's suggestion these comments should be removed from code going to production.
+and link to latest report: https://github.com/NKRisu/reimagined-lamp/blob/main/2024-12-04-ZAP-Report-.md 
 
 
 
