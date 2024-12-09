@@ -40,7 +40,7 @@ Cybersecurity and data privacy - Blended Logbook for the course
 |4.12.2024 | 2 h  | Adding new fields to DB   | Debugged, learnt, DB works      |
 |4.12.2024 | 2 h  | Account, terms, policy    | Required pages added, DB works  |
 |4.12.2024 | 2 h  | New page testing          | ZAP reports, bug fixes done     |
-
+|9.12.2024 | 2 h  | Last Assignment writing   | All phases done, course done    |
 
 
 </details>
